@@ -6,6 +6,7 @@ class Nama extends React.Component {
         this.state = {
             title: "Title Pertama",
             subTitle: "subtitle pertama"
+            
         };
     }
 
@@ -14,7 +15,7 @@ class Nama extends React.Component {
             title: "Title baru"
         });
     };
-
+   
     render() {
         return (
             <div>

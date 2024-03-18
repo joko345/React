@@ -15,4 +15,6 @@ class Badan extends React.Component{
         </div>
     };
 }
+
+    
 export default Badan;
