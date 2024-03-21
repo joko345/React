@@ -6,6 +6,7 @@ import Chat from './nestedProps';// Mengimpor Chat dari nestedProps.js
 import Product from './propsFunction'; 
 import { Football, Football1 } from './foot';//import dua komponen dari satu file js
 import NewGoal from './MadeGoal';
+import Garasi from './cars';
 const phoneData = [//Harus dua kalimat agar bisa dipanggil sebagai "phone"
   { name: "Oppo", price: "850000", discount: "20" },
   { name: "Xiaomi", price: "12500000", discount: "20" },
@@ -34,6 +35,7 @@ function App() {
         <Football />
         <Football1 />
         <NewGoal />
+        <Garasi/>
         {phoneData.map((phone, id) => (//map menentukan kata yang akan digunakan untuk pemanggilan
           <Product //id sebagai key/kunci bagi setiap element dalam array phoneData
             key={id}
