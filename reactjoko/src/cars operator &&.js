@@ -19,4 +19,6 @@ const cars = ['BMW', 'FORD', 'LIMO'];
 // Memanggil dan menampilkan komponen Garasi dengan properti cars
 const GarasiComponent = () => <Garasi cars={cars} />;
 //membuat komponen baru dan menyimpan hasil kompile
+
+
 export default GarasiComponent;
