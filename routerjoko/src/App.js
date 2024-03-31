@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import State from './State';
+import StateObject from './StateObject';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -9,6 +11,9 @@ import Nopage from "./pages/Nopage";
 
 function App() {
   return (
+    <div>
+    <State/>
+    <StateObject/>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -19,6 +24,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 
