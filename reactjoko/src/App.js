@@ -26,6 +26,7 @@ function Compon() {//ekspresi javascript pada jsx
 //test
 function App() {
   return (
+
     <div className="App">{/* karena product di className app maka akan ditampilkan di tengah */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
