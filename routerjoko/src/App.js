@@ -8,10 +8,18 @@ import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Nopage from "./pages/Nopage";
+import Timers from "./timer";
+import Depend from "./timerDependant";
+import FormName from "./formNama";
+import MultipleForm from './multipleform';
 
 function App() {
   return (
     <div>
+    <Timers/>
+    <Depend/>
+    <FormName/>
+    <MultipleForm/>
     <State/>
     <StateObject/>
     <BrowserRouter>
