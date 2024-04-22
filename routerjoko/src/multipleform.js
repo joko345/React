@@ -18,6 +18,14 @@ function MultipleForm() {
         console.log(inputs); // Menampilkan nilai inputs ke dalam console
     };
 
+    // State untuk menyimpan nilai textarea
+    const [textArea, setTextArea] = useState('Ini contoh');
+
+    // Fungsi untuk menangani perubahan nilai textarea
+    const handleTextAreaChange = (event) => {
+        setTextArea(event.target.value);
+    };
+
     return (
         <form onSubmit={handleSubmit}>
             <label>
@@ -39,6 +47,11 @@ function MultipleForm() {
                 onChange={handleChange} // Memanggil fungsi handleChange saat nilai input berubah
             />
             <input type="submit" />
+            
+            {/* Form untuk textarea */}
+            <form>
+                <textarea value={textArea} onChange={handleTextAreaChange} />
+            </form>
         </form>
     );
 }

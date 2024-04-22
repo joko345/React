@@ -12,6 +12,7 @@ import Timers from "./timer";
 import Depend from "./timerDependant";
 import FormName from "./formNama";
 import MultipleForm from './multipleform';
+import DropDown from "./DropDown";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
     <Depend/>
     <FormName/>
     <MultipleForm/>
+    <DropDown/>
     <State/>
     <StateObject/>
     <BrowserRouter>
