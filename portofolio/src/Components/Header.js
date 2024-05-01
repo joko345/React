@@ -1,6 +1,5 @@
-import React, { Component } from "react"; // Mengubah sintaks import untuk Component
-import ParticlesBg from "particle-bg";
-import { fade } from "react-awesome-reveal"; // Menggunakan kurung kurawal untuk import fade
+import React, { Component } from "react";
+import ParticlesBg from "particles-bg";
 
 class Header extends Component {
     render() {
@@ -16,11 +15,27 @@ class Header extends Component {
                 <nav id="nav-wrap">
                     <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
                     <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
-                    
+                    <ul id="nav" className="nav">
+                        <li className="current">
+                            <a className="smoothscroll" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#resume">Resume</a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#works">Works</a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </nav>
             </header>
         );
     }
 }
 
-export default Header; // Menambahkan eksport default untuk komponen Header
+export default Header;
