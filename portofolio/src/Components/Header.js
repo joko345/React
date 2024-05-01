@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
+import { Fade } from "react-awesome-reveal";
 
 class Header extends Component {
     render() {
         if (!this.props.data) return null;
-        const project = this.props.data.project;
-        const github = this.props.data.github;
-        const name = this.props.data.name;
-        const description = this.props.data.description;
+        const { project, github, name, description } = this.props.data;
         
         return (
             <header id="home">
@@ -33,6 +31,33 @@ class Header extends Component {
                         </li>
                     </ul>
                 </nav>
+                <div className="row banner">
+                    <Fade bottom>
+                        <h1 className="responsive-headline">{name}</h1>
+                    </Fade>
+                    <Fade bottom duration={1200}>
+                        <h3 className="deskripsi">{description}</h3>
+                    </Fade>
+                    <Fade bottom duration={2000}>
+                        <ul className="social">
+                            <li>
+                                <a href={project} className="button btn project-btn">
+                                    <i className="fa fa-book"></i>Project
+                                </a>
+                            </li>
+                            <li>
+                                <a href={github} className="button btn github-btn">
+                                    <i className="fa fa-github"></i>Github
+                                </a>
+                            </li>
+                        </ul>
+                    </Fade>
+                </div>
+                <p className="scrolldown">
+                    <a className="smoothscroll" href="#about">
+                        <i className="icon-down-circle"></i>
+                    </a>
+                </p>
             </header>
         );
     }

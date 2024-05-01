@@ -5,8 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+h1.responsive-headline{
+  font-size: 60px;
+  color:white;
+}
+h3.deskripsi{
+  font-size: 30px;
+  color:white;
+  
+.button, .btn {
+    background-color: black;
+    color: white;
+    /* tambahkan properti lain yang dibutuhkan */
 }
 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
